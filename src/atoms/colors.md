@@ -16,11 +16,11 @@ These are Colors in the Application
   </div>
 
   <div class="library__color-swatch">
-    <span class="library__color-swatch__preview" style="background-color: #1E8339"></span>
+    <span class="library__color-swatch__preview color-black"></span>
     <ul class="library__color-swatch__details">
-      <li><strong>Green</strong></li>
-      <li>#1E8339</li>
-      <li>$color-green</li>
+      <li><strong>color-black</strong></li>
+      <li>#000</li>
+      <li>$_color-black</li>
     </ul>
   </div>
 

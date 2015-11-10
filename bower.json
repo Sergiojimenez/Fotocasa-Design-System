@@ -1,6 +1,6 @@
 {
-  "name": "patternpack-example-library",
-  "description": "The example pattern library created from pattern pack",
+  "name": "Fotocasa-Design-System",
+  "description": "Fotocasa design system",
   "version": "1.0.6",
   "license": "MIT",
   "ignore": [
@@ -17,7 +17,7 @@
   "repository":
   {
     "type": "git",
-    "url": "git://github.com/patternpack/patternpack-example-library.git"
+    "url": "https://github.com/Sergiojimenez/Fotocasa-Design-System.git"
   },
   "authors": [
     "John Gully <john.gully@slalom.com>",

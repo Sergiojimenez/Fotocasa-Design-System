@@ -1,0 +1,86 @@
+$_color-neutroLightest:  #ffffff;
+$_color-neutroDarker:    #333333;
+
+$_color-mainLight:       #b2d6ed;
+$_color-main:            #3997d3;
+$_color-mainDark:        #165681;
+
+$_color-accent:          #ec671c;
+$_color-accentDark:      #c64e17;
+
+// color scheme (private)
+$_color-black: #000;
+$_color-grey: lighten(black, 20%);
+$_color-grey--medium: darken(white, 13.2%);
+$_color-grey--light: darken(white, 8.2%);
+$_color-grey--lightest: darken(white, 4%);
+$_color-orange: $_color-accent;
+$_color-blue: $_color-main;
+$_color-babyblue: #b7e1f4;
+$_color-green: #40b31a;
+$_color-red: #b31a1a;
+
+$text-color: $_color-grey;
+$link-color: #09f;
+
+$bg-color: #fff;
+
+// base/fonts
+$font-family: "OpenSans";
+$font-family-stack: $font-family, sans-serif;
+$font-base-url: "http://images.fotocasa.es/inmesp/webfonts/";
+$font-family-light-url: $font-base-url + "opensans-regular-webfont.woff";
+$font-family-semibold-url: $font-base-url + "opensans-semibold-webfont.woff";
+
+// base/typography
+$text-size: 14px;
+$text-size-alpha: 24px;
+$text-size-beta: 20px;
+$text-size-gamma: 16px;
+$text-size-delta: 12px;
+$text-size-omega: 10px;
+
+$text-line-height: 1.5;
+
+$text-color: #333 !default;
+$text-color-muted: lighten($text-color, 60%);
+$action-color: #09f;
+
+// base/forms
+$input-border-color: #ccc;
+$input-height: 32px;
+$input-padding: 4px;
+
+$button-border-color: #ddd;
+
+// components/box
+$box-border-color: #eaeaea;
+$box-title-text-color: #fff;
+
+// components/group
+$group-item--active-color: $_color-babyblue;
+$group_item--hover-color: transparentize($group-item--active-color, 0.8);
+
+// components/buttons
+
+// button (phantom)
+$button-color:          $_color-main;
+$button-background:     $_color-neutroLightest;
+$button-background--hover:   $_color-mainLight;
+$button-background--pressed: $button-background--hover;
+
+// primary
+$button-primary-color:      $_color-neutroLightest;
+$button-primary-background: $_color-main;
+$button-primary-background--hover: $_color-mainDark;
+$button-primary-background--pressed: $button-primary-background--hover;
+
+// accent
+$button-accent-color:           $_color-neutroLightest;
+$button-accent-background:      $_color-accent;
+$button-accent-background--hover:    $_color-accentDark;
+$button-accent-background--pressed: $button-accent-background--hover;
+
+$page-width: 960px;
+
+$panel-border-color: $_color-grey--light;

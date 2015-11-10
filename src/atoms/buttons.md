@@ -6,24 +6,26 @@ TODO: Describe what buttons are and how they are used in the application.
 
 ### Examples
 <div class="library__example">
-  <button type="button" class="button--primary">Primary</button>
-  <button type="button" class="button--secondary">Secondary</button><br />
+  <button type="button" class="button">Button</button>
+  <button type="button" class="button button--small">Button Small</button>
+  <button type="button" class="button button--large">Button Large</button><br />
   <br />
-  <button type="button" class="button--primary button--large">Primary Large</button>
-  <button type="button" class="button--secondary button--large">Secondary Large</button><br />
+  <button type="button" class="button button--primary">Button Primary</button>
+  <button type="button" class="button button--accent">Button Accent</button><br />
   <br />
-  <button type="button" class="button--primary button--small">Primary Small</button>
-  <button type="button" class="button--secondary button--small">Secondary Small</button>
+  <button type="button" class="button button--small button--primary">Button Small Primary</button>
+  <button type="button" class="button button--large button--primary">Button Large Primary</button>
 </div>
 
 ### Code
 ```html
-<button type="button" class="button--primary">Primary</button>
-<button type="button" class="button--secondary">Secondary</button>
+<button type="button" class="button">Button</button>
+<button type="button" class="button button--small">Button Small</button>
+<button type="button" class="button button--large">Button Large</button>
 
-<button type="button" class="button--primary button--large">Primary Large</button>
-<button type="button" class="button--secondary button--large">Secondary Large</button>
+<button type="button" class="button button--primary">Button Primary</button>
+<button type="button" class="button button--accent">Button Accent</button>
 
-<button type="button" class="button--primary button--small">Primary Small</button>
-<button type="button" class="button--secondary button--small">Secondary Small</button>
+<button type="button" class="button button--small button--primary">Button Small Primary</button>
+<button type="button" class="button button--large button--primary">Button Large Primary</button>
 ```

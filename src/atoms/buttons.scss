@@ -1,23 +1,107 @@
-button {
-  padding: 5px 20px;
-  border: 0;
-  border-radius: 5px;
-  color: white;
+
+/*------------------------------------*\
+    Fotocasa Button Style
+\*------------------------------------*/
+
+
+// button (phantom)
+$button-color:          $_color-main;
+$button-background:     $_color-neutroLightest;
+$button-background--hover:   $_color-mainLight;
+$button-background--pressed: $button-background--hover;
+
+// primary
+$button-primary-color:      $_color-neutroLightest;
+$button-primary-background: $_color-main;
+$button-primary-background--hover: $_color-mainDark;
+$button-primary-background--pressed: $button-primary-background--hover;
+
+// accent
+$button-accent-color:           $_color-neutroLightest;
+$button-accent-background:      $_color-accent;
+$button-accent-background--hover:    $_color-accentDark;
+$button-accent-background--pressed: $button-accent-background--hover;
+
+
+.button {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: $button-background;
+	border-radius: 1px;
+	border-radius: .125rem;
+	border-color: $button-color;
+	border-style: solid;
+	border-width: 1px;
+	color: $button-color;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font-family-stack;
+	font-size: 14px;
+	font-size: rem(14px);
+	font-weight: 300;
+	line-height: 16px;
+	line-height: 1rem;
+	padding: 12px 16px;
+	padding: .75rem 1rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	min-width: 48px;
+	min-width: 3rem;
+	&:hover {
+	    background: $button-background--hover;
+	    border-color: transparent;
+	    text-decoration: none;
+
+	}
+
+	&--small {
+		font-size: 12px;
+		font-size: rem(12px);
+		line-height: 20px;
+		line-height: .75rem;
+		padding: 12px 8px;
+		padding: .75rem .5rem;
+	}
+
+	&--large {
+		font-size: 20px;
+		font-size: rem(20px);
+		line-height: 24px;
+		line-height: 1.5rem;
+		padding: 12px 16px;
+		padding: .75rem 1rem;
+		white-space: nowrap;
+	}
+
+
+	&--pressed {
+	    background: $button-background--hover;
+	    border-color: transparent;
+	    text-decoration: none;
+	}
+
+	&--primary {
+	    background: $button-primary-background;
+	    border-color: $button-primary-background;
+	    color: $button-primary-color;
+	    &:hover {
+	    	background: $button-primary-background--hover;
+	    }
+	}
+
+	&--primary--pressed {
+		background: $button-primary-background--hover;
+	}
+
+	&--accent {
+	    background: $button-accent-background;
+	    border-color: $button-accent-background;
+	    color: $button-accent-color;
+	    &:hover {
+			background: $button-accent-background--hover;
+	    }
+	}
 }
 
-.button--primary {
-  background-color: #000;
-}
 
-.button--secondary {
-  background-color: #CCC;
-}
-
-.button--small {
-  padding: 2px 20px;
-  height: 30px;
-}
-
-.button--large {
-  height: 40px;
-}
