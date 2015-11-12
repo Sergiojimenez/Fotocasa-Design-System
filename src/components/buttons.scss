@@ -22,12 +22,6 @@ $button-accent-background:      $_color-accent;
 $button-accent-background--hover:    $_color-accentDark;
 $button-accent-background--pressed: $button-accent-background--hover;
 
-.button-flexbox {
-	display: flex;
-	flex-wrap: wrap;
-	background: linear-gradient(red, green);
-	font-size: 1rem;
-}
 
 
 .button {
