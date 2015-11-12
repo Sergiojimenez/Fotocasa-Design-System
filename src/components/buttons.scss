@@ -25,11 +25,12 @@ $button-accent-background--pressed: $button-accent-background--hover;
 .button-flexbox {
 	display: flex;
 	flex-wrap: wrap;
+	background: linear-gradient(red, green);
+	font-size: 1rem;
 }
 
 
 .button {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background: $button-background;
 	border-radius: 1px;
@@ -57,7 +58,6 @@ $button-accent-background--pressed: $button-accent-background--hover;
 	    background: $button-background--hover;
 	    border-color: transparent;
 	    text-decoration: none;
-
 	}
 
 	&--small {
