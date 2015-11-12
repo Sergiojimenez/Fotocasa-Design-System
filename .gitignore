@@ -4,7 +4,7 @@ src/assets/sass/*patternpack-patterns.scss
 src/assets/less/*patternpack-patterns.less
 
 # Project directories
-node_modules/
+node_modules/patternpack/node_modules
 bower_components/
 html/
 g
