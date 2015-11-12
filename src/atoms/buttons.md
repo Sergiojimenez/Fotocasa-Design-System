@@ -6,6 +6,7 @@ TODO: Describe what buttons are and how they are used in the application.
 
 ### Examples
 <div class="library__example">
+	<div class="button-flexbox">Soy un flexie</div>
   <button type="button" class="button">Button</button>
   <button type="button" class="button button--small">Button Small</button>
   <button type="button" class="button button--large">Button Large</button><br />

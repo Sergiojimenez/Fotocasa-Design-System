@@ -22,6 +22,11 @@ $button-accent-background:      $_color-accent;
 $button-accent-background--hover:    $_color-accentDark;
 $button-accent-background--pressed: $button-accent-background--hover;
 
+.button-flexbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 
 .button {
 	-webkit-box-sizing: border-box;
