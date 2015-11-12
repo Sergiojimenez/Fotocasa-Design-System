@@ -24,7 +24,7 @@ PatternLibrary.Global.Navigation = function() {
   }
 
   function toggleMenu() {
-    event.preventDefault();
+    //event.preventDefault();
 
     if (libraryContainer.classList) {
       libraryContainer.classList.toggle("open");
