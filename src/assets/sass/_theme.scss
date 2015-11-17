@@ -1,3 +1,16 @@
+$primary:			#42A5F5;
+$primary--dark:		#1565C0;
+$primary--light:	#95DEF7;
+
+$white:				#ffffff;
+$black:				#424242;
+$grey:				#E0E0E0;
+$grey--dark:		#757575;
+$grey--light:		#F5F5F5;
+
+$accent:			#FF5252;
+$accent--dark:		#D32F2F;					
+
 $_color-neutroLightest:  #ffffff;
 $_color-neutroDarker:    #333333;
 
@@ -8,7 +21,7 @@ $_color-mainDark:        #165681;
 $_color-accent:          #ec671c;
 $_color-accentDark:      #c64e17;
 
-// color scheme (private)
+
 $_color-black: #000;
 $_color-grey: lighten(black, 20%);
 $_color-grey--medium: darken(white, 13.2%);
@@ -29,8 +42,27 @@ $bg-color: #fff;
 $font-family: "OpenSans";
 $font-family-stack: $font-family, sans-serif;
 $font-base-url: "http://images.fotocasa.es/inmesp/webfonts/";
-$font-family-light-url: $font-base-url + "opensans-regular-webfont.woff";
+$font-family-light-url: $font-base-url + "opensans-light-webfont.woff";
+$font-family-regular-url: $font-base-url + "opensans-regular-webfont.woff";
 $font-family-semibold-url: $font-base-url + "opensans-semibold-webfont.woff";
+
+@font-face {
+    font-family: $font-family;
+    src: url($font-family-light-url) format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: $font-family;
+    src: url($font-family-regular-url) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $font-family;
+    src: url($font-family-semibold-url) format('woff');
+    font-weight: 700;
+}
 
 // base/typography
 $text-size: 14px;

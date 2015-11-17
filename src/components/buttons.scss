@@ -5,29 +5,27 @@
 
 
 // button (phantom)
-$button-color:          $_color-main;
-$button-background:     $_color-neutroLightest;
-$button-background--hover:   $_color-mainLight;
-$button-background--pressed: $button-background--hover;
+$button-color:          $primary;
+$button-background:     $white;
+$button-background--hover:   $primary--light;
+$button-background--pressed: $primary--light;
 
 // primary
-$button-primary-color:      $_color-neutroLightest;
-$button-primary-background: $_color-main;
-$button-primary-background--hover: $_color-mainDark;
-$button-primary-background--pressed: $button-primary-background--hover;
+$button-primary-color:      $white;
+$button-primary-background: $primary;
+$button-primary-background--hover: $primary--dark;
+$button-primary-background--pressed: $primary--dark;
 
 // accent
-$button-accent-color:           $_color-neutroLightest;
-$button-accent-background:      $_color-accent;
-$button-accent-background--hover:    $_color-accentDark;
-$button-accent-background--pressed: $button-accent-background--hover;
+$button-accent-color:           $white;
+$button-accent-background:      $accent;
+$button-accent-background--hover:    $accent--dark;
+$button-accent-background--pressed: $accent--dark;
 
 
 .button {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background: $button-background;
-	border-radius: 1px;
 	border-radius: .125rem;
 	border-color: $button-color;
 	border-style: solid;
@@ -36,44 +34,33 @@ $button-accent-background--pressed: $button-accent-background--hover;
 	cursor: pointer;
 	display: inline-block;
 	font-family: $font-family-stack;
-	font-size: 14px;
-	font-size: rem(14px);
+	font-size: 1rem;
 	font-weight: 300;
-	line-height: 16px;
 	line-height: 1rem;
-	padding: 12px 16px;
-	padding: .75rem 1rem;
+	padding: 0 1rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	min-width: 48px;
 	min-width: 3rem;
+	height: 3rem;
+	
 	&:hover {
 	    background: $button-background--hover;
 	    border-color: transparent;
 	    text-decoration: none;
-
 	}
 
 	&--small {
-		font-size: 12px;
-		font-size: rem(12px);
-		line-height: 20px;
+		font-size: .75rem;
 		line-height: .75rem;
-		padding: 12px 8px;
 		padding: .75rem .5rem;
 	}
 
 	&--large {
-		font-size: 20px;
-		font-size: rem(20px);
-		line-height: 24px;
-		line-height: 1.5rem;
-		padding: 12px 16px;
-		padding: .75rem 1rem;
+		font-size: 1.25rem;
+		height: 62px;
 		white-space: nowrap;
 	}
-
 
 	&--pressed {
 	    background: $button-background--hover;
@@ -95,6 +82,7 @@ $button-accent-background--pressed: $button-accent-background--hover;
 	}
 
 	&--accent {
+		font-size: 1.250rem;
 	    background: $button-accent-background;
 	    border-color: $button-accent-background;
 	    color: $button-accent-color;

@@ -3,10 +3,10 @@ title: Buttons
 ---
 
 <div class="library__header">
-<div>
-<h1>&lt; Buttons &gt;</h1>
-<h2>Los distintos tipos de botones y cómo usarlos en la aplicación</h2>
-</div>
+	<div>
+		<h1>&lt; Buttons &gt;</h1>
+		<h2>Los distintos tipos de botones y cómo usarlos en la aplicación</h2>
+	</div>
 </div>
 
 <div class="library__main">
