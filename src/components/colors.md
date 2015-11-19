@@ -4,8 +4,7 @@ title: Colors
 
 <div class="library__header">
   <div>
-    <h1>&lt; Colors &gt;</h1>
-    <h2>Paleta de colores primaria, secundaria y acento.</h2>
+    <h1>Colors</h1>
   </div>
 </div>
 

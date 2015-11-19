@@ -16,7 +16,7 @@
 	font-size: 1rem;
 	font-weight: 300;
 	height: 3rem;
-	line-height: .750rem;
+	line-height: 1rem;
 	overflow: visible; // fix horizontal space in tag button, ie
 	padding: 1rem 1.5rem;
 	position: relative;
@@ -29,23 +29,27 @@
 	&:hover {
 	    background: $c-primary-light;
 	    border-color: transparent;
-	    text-decoration: none;
+	    text-decoration: none !important;
 	}
 
 
 	&--small {
 		font-size: .875rem;
-		line-height: .875rem;
-		padding: .250rem .500rem;
+		line-height: 1.200rem;
+		padding: .500rem .750rem;
 		height: 2.375rem;
 	}
 
-	&--large,
-	&--accent {
-		font-size: 1.250rem;
-		line-height: 1.250rem;
-		height: 3.875rem;
-		padding: .750rem 1rem;
+	&--disabled {
+		background: $c-grey;
+		color: $c-grey-dark;
+		cursor: default;
+		border: 1px solid $c-grey;
+
+			&:hover {
+				background: $c-grey;
+				border: 1px solid $c-grey;
+			}
 	}
 
 	&--primary {
@@ -59,6 +63,9 @@
 	}
 
 	&--accent {
+		font-size: 1.250rem;
+		line-height: 1.500rem;
+		height: 3.875rem;
 	    background: $c-accent;
 	    border-color: $c-accent;
 	    color: $c-white;
