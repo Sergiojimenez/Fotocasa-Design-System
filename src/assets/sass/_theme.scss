@@ -1,15 +1,20 @@
-$primary:			#42A5F5;
-$primary--dark:		#1565C0;
-$primary--light:	#95DEF7;
+//New Color Palette
 
-$white:				#ffffff;
-$black:				#424242;
-$grey:				#E0E0E0;
-$grey--dark:		#757575;
-$grey--light:		#F5F5F5;
+$c-primary:				#42A5F5;
+$c-primary-dark:		#1565C0;
+$c-primary-light:		#95DEF7;
 
-$accent:			#FF5252;
-$accent--dark:		#D32F2F;					
+$c-white:				#ffffff;
+$c-black:				#424242;
+$c-grey:				#E0E0E0;
+$c-grey-medium:			#999999;
+$c-grey-dark:			#757575;
+$c-grey-light:			#F5F5F5;
+
+$c-accent:			#FF5252;
+$c-accent-dark:		#D32F2F;
+
+/////////////////////////////////////				
 
 $_color-neutroLightest:  #ffffff;
 $_color-neutroDarker:    #333333;

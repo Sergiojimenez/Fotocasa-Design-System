@@ -5,6 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "latest",
+    "gulp": "^3.9.0",
+    "gulp-watch": "^4.3.5",
     "patternpack": "latest"
   },
   "repository": {
