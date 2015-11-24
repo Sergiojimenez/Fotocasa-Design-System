@@ -12,8 +12,7 @@ $card-price: #484747;
 $prod-oportunity: #888888;
 
 .sui-Card {
-  background-color: $c-grey-light;
-  border: 0;
+  background-color: $c-white;
   display: flex;
   flex-direction: column;
 
@@ -64,6 +63,8 @@ $prod-oportunity: #888888;
   margin: 40px 0;
   padding-bottom: 0;
   position: relative;
+  padding: 8px;
+  border: 1px solid $c-grey;
 
   &--highlighted {
     background-color: $c-grey;
@@ -74,9 +75,6 @@ $prod-oportunity: #888888;
   }
 
   .re-Card-meta {
-    color: lighten($card-price, 30%);
-    flex: 1;
-    margin: 10px 0;
     text-align: center;
     width: 100%;
 
@@ -90,11 +88,10 @@ $prod-oportunity: #888888;
   }
 
   .re-Card-ubication {
-    color: lighten($card-price, 30%);
-    line-height: 1.5;
-    margin: 0 auto 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    width: 70%;
+    width: 80%;
 
     &--highlighted {
       color: $c-grey-light;
@@ -103,18 +100,32 @@ $prod-oportunity: #888888;
 
   &-footer {
     @include clearfix;
-    background-color: $card-bg-footer;
+    background-color: $c-grey;
     display: flex;
 
-    .re-Card-contactButton {
-      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNrs3cFNw0AQRuEFpYCUQAm0QAeUABUgOqADSsAdQAnpAEpIB9BBsIUlcghkE8/Mzm+/J4188cXzyYccsi6FiIiIiIiIiPJ0MV7v+rliHU3b9tMNIK/93LKPFG0GkB17yNMlKwCEjrT7Zz77uWZFZr0c2feuVNwAShxGFQgocRgHQd5BCcEY9vxcA/I0/lAExRdjPe66CqSA4o5RTgUBxRfjLBBQ/DDOBgHFB2MSCCj2GJNBQLHFMAEBxQ7DDAQUGwxTEFCmY5iDLBnFAsMFZIkoVhhuIEtCscRwBVkCijWGO8icUTwwQkDmiOKFEQYyJxRPjFCQOaB4Y4SDKKNEYDQBUUSJwmgGooQSidEURAElGqM5SGaUFhgpQDKitMJIA5IJpSVGKpAMKK0x0oG0RMmAkRKkBUoWjLQgkSiZMFKDRKBkw0gP4omSEUMCxAMlK4YMiCVKZgwpEAuU7BhyIFNQFDAkQc5BUcGQBTkFRQlDGqQGRQ3jIMiq6NTtvQX7rcelH+qjn5t+vlQeUu2skwHlvvJeOQxFkFoUSQxVkGMoshjKIH+hSGMMrYp23bj8h/JzZuGjMsYcQIbexplFnCgHCAECCAECCAECCAECCAFCgABCgABCgABCgABCgBAgEvFhSd4QAkQMZMMa0rTh89152pbf/8AQERERERERUYq+BRgAdOCuQeZ50fEAAAAASUVORK5CYII=') no-repeat center center;
-      background-size: 20px;
-      border: $card-bg-footer 1px solid;
-      cursor: pointer;
+    .re-Card-contactButton,
+    .re-Card-phone,
+    .re-Card-favIcon {
+      padding: 10px 0;
+      text-align: center;
+      border: $c-grey 1px solid;
       flex: 1 0 auto;
-      margin: 0;
-      padding: 15px;
+      color: $c-black;
+    }
+
+    .re-Card-contactButton,
+    .re-Card-phone {
       transition: background .5s ease;
+    }
+
+    .re-Card-favIcon,
+    .re-Card-contactButton {
+      cursor: pointer;
+    }
+
+    .re-Card-contactButton {
+      -webkit-appearance: none;
+      background-color: $c-grey;
 
       span {
         display: none;
@@ -125,18 +136,15 @@ $prod-oportunity: #888888;
       }
     }
 
-    .re-Card-phone {
-      color: $c-grey;
-      flex: 1 0 auto;
-      padding: 10px 0;
-      text-align: center;
-    }
+    // .re-Card-phone {
+    //   color: $c-grey;
+    //   flex: 1 0 auto;
+    //   padding: 10px 0;
+    //   text-align: center;
+    // }
   }
 
   .re-Card-favIcon {
-    cursor: pointer;
-    flex: 1 0 auto;
-    transition: background .5s ease;
 
     &:hover {
       background-color: $c-grey-light;
@@ -171,7 +179,7 @@ $prod-oportunity: #888888;
 .re-Card-content {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 213px;
   justify-content: space-between;
   padding: 0;
 
@@ -197,15 +205,23 @@ $prod-oportunity: #888888;
 }
 
 .re-Card-priceContainer {
-  color: $card-price;
-  font-size: 32px;
+  color: $c-accent;
   margin: 0;
   text-align: center;
 
   &--price {
     display: inline-block;
-    margin: 10px 0 0;
     position: relative;
+
+      .re-Headline {
+        display: inline-block;
+      }
+
+      svg,
+      .re-Headline {
+        fill: $c-accent;
+        color: $c-accent;
+      }
 
 
     @media screen and (max-width: 768px){
@@ -221,18 +237,17 @@ $prod-oportunity: #888888;
     margin: 0;
 
 
-    &:before {
-      content: '↓';
-      font-family: helvetica, sans-serif;
-      left: -30px;
-      position: absolute;
-      top: 3px;
-    }
+    // &:before {
+    //   content: '↓';
+    //   font-family: helvetica, sans-serif;
+    //   left: -30px;
+    //   position: absolute;
+    //   top: 3px;
+    //}
 
     @media screen and (max-width: 768px){
       display: inline-block;
       float: none;
-      margin: 10px 0 0;
     }
   }
 
@@ -255,16 +270,13 @@ $prod-oportunity: #888888;
 }
 
 .re-Card-bumpdate {
-  color: darken($card-type, 20%);
-  font-size: 12px;
   left: 0;
   margin: 0 auto;
   position: absolute;
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  top: -20px;
-  width: 100px;
+  top: -32px;
 }
 
 .re-Card-logo {

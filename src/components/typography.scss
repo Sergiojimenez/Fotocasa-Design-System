@@ -17,44 +17,50 @@ dl {
 
 h1, h2, h3 {
 	font-weight: 300;
-	margin-top: 1rem;
 	line-height: 1.2rem;
+	margin: 1rem 0;
 }
 
-h1 {
+h1,
+.re-Headline {
 	font-size: $headline;
 	line-height: 2.500rem;
 	color: $c-grey-dark;
+	margin: 1rem 0;
 }
 
-h2 {
+h2,
+.re-Title {
 	font-size: $title;
 	line-height: 2rem;
 	color: $c-black;
+	margin: 1rem 0;
 }
 
-h3 {
+h3,
+.re-Subhead {
 	font-size: $subhead;
 	line-height: 1.750rem;
 	color: $c-black;
+	margin: 1rem 0;
 }
 
-.re-display-1,
-.re-display-2 {
+.re-Display-1,
+.re-Display-2 {
 	color: $c-grey-dark;
 	margin: .5rem 0 2rem;
 	line-height: 3rem;
 }
 
-.re-display-1 {
+.re-Display-1 {
 	font-size: $display1;
 }
 
-.re-display-2 {
+.re-Display-2 {
 	font-size: $display2;
 }
 
-.re-heading-compact {
+.re-Heading-compact {
 	margin: .5rem 0;
 }
 
@@ -65,7 +71,7 @@ p {
 	margin-bottom: 1rem;
 }
 
-//MODIFIERS
+//MODIFIERS WEIGHT
 b,
 strong {
 	font-size: 600;
@@ -73,27 +79,30 @@ strong {
 
 
 
-.re-bold {
+.re-Bold {
 	font-weight: 600;
 }
 
-.re-regular {
+.re-Regular {
 	font-weight: 400;
 }
 
-.re-light {
+.re-Light {
 	font-weight: 300;
 }
 
-.re-small {
+//MODIFIERS SIZE
+
+.re-Small {
 	font-size: $caption;
 }
 
 //Listas
 
-.re-list {
+.re-List {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 
 	> li {
 		margin-bottom: 6px;
@@ -112,15 +121,28 @@ strong {
 	&--inline {
 		li {
 			display: inline-block;
-			border-right: 2px solid $c-grey;
 			padding-right: 8px;
 			margin-right: 8px;
 
 			&:last-child {
-				border: 0;
-				border: none;
 				margin-right: 0;
 				padding-right: 0;
+			}
+		}
+
+		&-separator {
+			li {
+				display: inline-block;
+				border-right: 2px solid $c-grey;
+				padding-right: 8px;
+				margin-right: 8px;
+
+				&:last-child {
+					border: 0;
+					border: none;
+					margin-right: 0;
+					padding-right: 0;
+				}
 			}
 		}
 	}
@@ -129,7 +151,7 @@ strong {
 //Links
 
 a,
-.re-as-link {
+.re-As-link {
 	color: $c-primary;
 	text-decoration: none;
 
@@ -143,25 +165,28 @@ a,
 	}
 }
 
-a.re-link--disabled {
-	color: $c-grey;
-	pointer-events: none;
-   	cursor: default;
+a.re-Link {
 
-	&:hover {
-		text-decoration: none;
-		cursor: pointer;
+	&--disabled {
+		color: $c-grey;
+		pointer-events: none;
+   		cursor: default;
+
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+		}
 	}
-}
 
-a.re-link--icon-left {
-	svg {
-		padding-right: 4px;
-	}	
-}
+	&--icon-left {
+		svg {
+			padding-right: 4px;
+		}	
+	}
 
-a.re-link--icon-right {
-	svg {
-		padding-left: 4px;
-	}	
+	&--icon-right {
+		svg {
+			padding-left: 4px;
+		}	
+	}
 }
