@@ -1,0 +1,279 @@
+// re-Card Settings
+$label-pricedown: #ceebfe;
+$label-new: #40b31a;
+$label-recommended: #9779c2;
+
+$card-bg-highlight: #e2e2e2;
+$card-bg-footer: #e7e7e7;
+$card-bg-white: $c-grey-light;
+$card-type: $c-grey-light;
+$card-price: #484747;
+
+$prod-oportunity: #888888;
+
+.sui-Card {
+  background-color: $c-grey-light;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+
+
+  &--contentFirst {
+    .sui-Card-topContent {
+      order: 1;
+    }
+  }
+
+  &--landscape {
+    flex-direction: row;
+
+    .sui-Card-topContent {
+      flex: 1 1 auto;
+
+      img {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+
+    .sui-Card-bottomContent {
+      flex: 1 1 auto;
+      padding: 0 1em 1em;
+    }
+  }
+}
+
+.sui-Card-topContent {
+  flex: 1 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.sui-Card-bottomContent {
+  flex: 1 0 auto;
+  padding: 0 1em 1em;
+}
+
+.re-Card {
+  @include clearfix;
+  background-color: $c-white;
+  margin: 40px 0;
+  padding-bottom: 0;
+  position: relative;
+
+  &--highlighted {
+    background-color: $c-grey;
+  }
+
+  .sui-Card {
+    margin-bottom: 0;
+  }
+
+  .re-Card-meta {
+    color: lighten($card-price, 30%);
+    flex: 1;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+
+    &--highlighted {
+      color: $c-grey-light;
+    }
+
+    span {
+      padding: 0 10px;
+    }
+  }
+
+  .re-Card-ubication {
+    color: lighten($card-price, 30%);
+    line-height: 1.5;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 70%;
+
+    &--highlighted {
+      color: $c-grey-light;
+    }
+  }
+
+  &-footer {
+    @include clearfix;
+    background-color: $card-bg-footer;
+    display: flex;
+
+    .re-Card-contactButton {
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNrs3cFNw0AQRuEFpYCUQAm0QAeUABUgOqADSsAdQAnpAEpIB9BBsIUlcghkE8/Mzm+/J4188cXzyYccsi6FiIiIiIiIiPJ0MV7v+rliHU3b9tMNIK/93LKPFG0GkB17yNMlKwCEjrT7Zz77uWZFZr0c2feuVNwAShxGFQgocRgHQd5BCcEY9vxcA/I0/lAExRdjPe66CqSA4o5RTgUBxRfjLBBQ/DDOBgHFB2MSCCj2GJNBQLHFMAEBxQ7DDAQUGwxTEFCmY5iDLBnFAsMFZIkoVhhuIEtCscRwBVkCijWGO8icUTwwQkDmiOKFEQYyJxRPjFCQOaB4Y4SDKKNEYDQBUUSJwmgGooQSidEURAElGqM5SGaUFhgpQDKitMJIA5IJpSVGKpAMKK0x0oG0RMmAkRKkBUoWjLQgkSiZMFKDRKBkw0gP4omSEUMCxAMlK4YMiCVKZgwpEAuU7BhyIFNQFDAkQc5BUcGQBTkFRQlDGqQGRQ3jIMiq6NTtvQX7rcelH+qjn5t+vlQeUu2skwHlvvJeOQxFkFoUSQxVkGMoshjKIH+hSGMMrYp23bj8h/JzZuGjMsYcQIbexplFnCgHCAECCAECCAECCAECCAFCgABCgABCgABCgABCgBAgEvFhSd4QAkQMZMMa0rTh89152pbf/8AQERERERERUYq+BRgAdOCuQeZ50fEAAAAASUVORK5CYII=') no-repeat center center;
+      background-size: 20px;
+      border: $card-bg-footer 1px solid;
+      cursor: pointer;
+      flex: 1 0 auto;
+      margin: 0;
+      padding: 15px;
+      transition: background .5s ease;
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $c-grey-light;
+      }
+    }
+
+    .re-Card-phone {
+      color: $c-grey;
+      flex: 1 0 auto;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+  .re-Card-favIcon {
+    cursor: pointer;
+    flex: 1 0 auto;
+    transition: background .5s ease;
+
+    &:hover {
+      background-color: $c-grey-light;
+    }
+
+    &--addTofavs {
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABB1JREFUeNrsnI1xozAQhXWeK4AS6CB0YF8HLoHrwOmADnwdUIKvA+wK8FVAOsAd5CBRMg5B0gokscLvzWgmyTj2aj+tdvWDhYAgCIIgCIKg1euHw/dKu5bJ9tS1RLZs8Lpb165de+nav66d5e8c1Nu6v7N/N/Ka2529F9mPK5c+9MaXXWu69jqj9f9/lFCXgND3oZ3Zh1a+zz50B/qRUziAoGqVYmT6GEyVpz600keJ704UDkaSDZjMQx92HkEEA9M7pg7UiWE7OupQIt9riT401MFFSeq5nBsp+kh4l0HyGwP8JKcNirP7xPlbFgBTo6Ik5qje7r+y4NDZ39u9vfuZoueu/ZkzqkqLhJzNmMtLi2ixFTUq5iTkTH5OQ/wcLzAaGT0uy+aC0KGaONJT4jTreo7PCWCsoRSGRHXwWDikhKTbGiqxHaH4qDyX2QeDDYXNFDJ3dLoqS01OzRUj1AQz1FrBVAwZ7Ug0TqhD1NUToqUgRnaIqFD5tNYMjmRK3lgChrBwdEnIecWC9uuglLrROIliIFHywpR8ExKKyv7UJjr2go8yyy0b8oIsYF4kRYkqOk4Md6gTYjlbM4nsoU6UKDnYhFIEULjC0A3+L0uJWlGRcJYKCmcYH6oUdn92jFrjc4cSAwzdWinRJZoYOnYPpY7M5tEC6qeiCjmL913PGNTb+evu51hsPo+U49lGvG8hD3URcekWEQydj7cbRZi/CMi3XhRT2ehctoO/guw8fPP9xoIe5D9C3o5wXxV/h/zrm+838AkvAQiAQFOAoMryr0wF5KaqhyGvSscWuD2QsctgW/hrkQi5bhRLeExZ/jU26N+CQ7Xbm8Jn3qTc7b1foGhPsCCnyoXhyGPsnLeB37xJddL5KdW0hVziXjtBPKEduzNUwX/ONXaePnr3rUCULBYdR5vMX8OPztTYVrSqh1sK+HK2CjHhISTd/dMMPp21Kp98b/og4rsNyH0RWM9d66meySjhX2upLrFbVbCpZurCCp6ug2aqSl0t71EK06R7NDB3HW4tkrwxibc+pn3T83GAYgfDSWGkyyeAQofh9NHATOif4QMUMwznPsoBZRIMr4tqQLGHkfs2wARlDxjhn0JjY8iC2hlyRv6wo2MBsZ26HxEK+zz6SFCiKWoeAUp0FeaaoURb7pugHAEjvEzfQxLTIZfuO7hCfrseoBBgRHecHTOU1cGIGcpqYcQIZfUwbKAkgBEeSsWw0/1nnoT+q2VXfR+N00hcU4kePRTAYAQFMBhBAQxGUADDEZQMMMKrEP52VU270LhArlDuAQouZDCCAhiMoAAGIyiAwQgKYCwMJR+8ltVtwrVqTxj1Pio0aEZeAIwIoAAGIyiAwQgKYDCCAhgLKhVfz8NPAl/eCUEQBEEQBEHc9V+AAQD7Ei2iVRpPHQAAAABJRU5ErkJggg==') no-repeat center center;
+      background-size: 20px;
+      border: $card-bg-footer 1px solid;
+      display: block;
+      padding: 20px;
+      transition: background .5s ease;
+    }
+
+    &--faved {
+      background: url('data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFFJREFUeNrsne1N40AQhu3oCjAVHKngQgUkFVyogLiCI/+RQiT+k1RArgK4CggV4KsAOrh0cLcD45Njknht78es877SCoRCtDMPMzvr7A5RBEEQBEEQBEGdV2zqja6vr0/VlwGPb2okPAall27UyNR4U+O3Guvb29tMgjOUDTTXcWH+wx0vy+dPemY7MlM2xC0NoMl/54mftngrMupRjaUy7M0DhB8MImnxVhu24Zey4dEZEGUATfpKjcuWEPZprcZcGbW2DGLMIIYW3p7gLNVYKDs21oAoI27YiMTBHy8BmZpOZ8oGAjCzBKI1mLhGWN/vWA9caMERs2kJImEQVx5soDR8ofPHFWsYMmEYPkUGpU3TGEfFvaUUW0cU8YtDL+hVGHIvAEbEjnxS87lrAIN+50kADNId+7R+hPAvTgSW6hmH/5tGGf7gKc1WaaXmn2pHCC/eEmFE7OAXTkOHUtSLUBikCfu4OkK4HHwIZGNL68pK4Jqnq4vyniXeUYm8OiprTYkqsJtCZM8CmjtVjv1iBfmlvOgEBoM0UyC+5qkgsLkn7PP0U4TwIvgaQT7Uz4uU4qI+g1/8RflWhCA65ERJHiFj+MO7xsWUdQl/eNc7g5hL3T/whwidUIQM4QcxGvYEP144Rg0IyDn8IEbnvQB35l1WgpQlMGVBggQgAAIBCIBAANIhIBu4QYw2BCSDH8QoIyDP8IMsIIgQOXrOP8L9C1+I0EleZT3CF/7TFZ3PyoH8hD+8a/l/H8LHGVH+eix38yzVKxOCvGiVHyctAlnAL37T1RYQJgQo7rUo3nUpP8uaYy1xvnbMiz/YAsJRMoefnOnTZdadV9rURpHu5A3hL6uiDhaj8g/3PX5Pkbqspyr9O4a8yEzhN2ua7ru0uvcDKr67t4LvrOw59vq16hNDihI8DTanrCrz6HRyOI0+rhjjhGP7daNf1SKk8jN1znUj+LM1jJFOvxatQw7cNCWFXxtrpNvVSPvUCS9EgFJfaZ0WU00amE2icDolSIBRq1Jt1OKP+2c9YaE/uGZM68JoDARQtBbwRtuFtk0wAcUgjNZAAMUsDCNAAMUcDGNAjhyKMRhGgRwpFKMwam0Ma+zo+9FxPJAkG89M9xWObcyU23VQpAw6DGPUtpewMyAdh2INhlUgHYViFYZ1IB2DYh2GEyAdgeIEhvEq60D19V4eRh//8SA0rV3BcBYhpWiR2sJ8l/a2BO8MkICgOIfhDUgAULzA8ApEMBRvMLwDEQjFKwwRQARB8Q7DWdmrURaTI3xeg5hKgCEmQgqRQlHi+kRL2uQwwlEA8QBFFAyRQBxCEQdDLBAHUETCEA3EIhSxMMRUWQeqL3KcqepnIx2G+AgpRMqYIyVpAWMk5d+EBw+EoTQ90RIMjKCANIQSFIzggNSEEhyMIIFoQgkSRrBAKqAEC0N82VtREr+fHIy22xPS92ehwoAgCIIgCIKgI9E/AQYAIsq1wNLNArwAAAAASUVORK5CYII=') no-repeat center center;
+      background-size: 20px;
+      border: $card-bg-footer 1px solid;
+      display: block;
+      padding: 20px;
+      transition: background .5s ease;
+    }
+  }
+}
+
+.re-Card-label {
+  display: inline-block;
+  line-height: 1;
+  margin: 10px 10px 0 0;
+}
+
+.re-Card-content {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 0;
+
+  &--highlighted {
+    background-color: $c-grey;
+  }
+}
+
+.re-Card-footer--highlighted {
+  background-color: $c-grey-light;
+}
+
+.sui-Card-bottomContent {
+  padding: 0;
+}
+
+.re-Card-clientlogo {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 115px;
+}
+
+.re-Card-priceContainer {
+  color: $card-price;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+
+  &--price {
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+
+
+    @media screen and (max-width: 768px){
+      float: none;
+    }
+  }
+
+  &--highlighted {
+    color: $c-grey-light;
+  }
+
+  &--price-down {
+    margin: 0;
+
+
+    &:before {
+      content: '↓';
+      font-family: helvetica, sans-serif;
+      left: -30px;
+      position: absolute;
+      top: 3px;
+    }
+
+    @media screen and (max-width: 768px){
+      display: inline-block;
+      float: none;
+      margin: 10px 0 0;
+    }
+  }
+
+  .re-Card-priceFrom {
+    margin-right: 7px;
+  }
+}
+
+.re-Card-label {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 120px;
+}
+
+.re-Card-topcomponent {
+  position: relative;
+}
+
+.re-Card-bumpdate {
+  color: darken($card-type, 20%);
+  font-size: 12px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: -20px;
+  width: 100px;
+}
+
+.re-Card-logo {
+  width: 75px;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+

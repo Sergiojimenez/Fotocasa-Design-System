@@ -25,6 +25,12 @@
   	vertical-align: middle;
   	white-space: nowrap;
   	transition: all 0.2s ease-out;
+
+  	svg {
+  		vertical-align: top;
+  		margin-right: 4px;
+  		fill: $c-primary;
+  	}
 	
 	&:hover {
 	    background: $c-primary-light;
@@ -60,6 +66,10 @@
 	    &:hover {
 	    	background: $c-primary-dark;
 	    }
+
+	    svg {
+  			fill: $c-white;
+  		}
 	}
 
 	&--accent {
@@ -73,6 +83,10 @@
 	    &:hover {
 			background: $c-accent-dark;
 	    }
+
+	    svg {
+  			fill: $c-white;
+  		}
 	}
 
 	&--full {

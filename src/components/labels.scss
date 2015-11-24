@@ -1,0 +1,15 @@
+.re-label {
+	background-color: $c-grey-dark;
+	font-size: $caption;
+	font-weight: 400;
+	padding: 4px;
+	text-transform: uppercase;
+	color: $c-white;
+	text-align: center;
+
+	&--accent {
+		font-weight: 600;
+		padding: 8px;
+		background-color: $c-accent;
+	}
+}
