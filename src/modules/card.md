@@ -3,60 +3,216 @@ title: Card
 ---
 
 <div style="background-color: #f5f5f5">
-<div class="library__header">
-	<div>
-		<h1 class="library__header_title">Card</h1>
-	</div>
-</div>
-<div class="library__main">
-<div class="re-Card">
-    <div class="sui-Card">
-        <div class="sui-Card-topContent">
-            <div class="re-Card-topcomponent">
-                <span class="re-Card-bumpdate re-Small"><span class="re-label">Nuevo</span> ahora</span>
-                <div class="re-Card-clientlogo"></div>
-                <span class="re-Card-label re-label re-label--accent">Oportunidad</span>
-                <a href="#">
-                    <img src="http://a.ftcs.es/inmesp/promotion/2015/03/02/19112571/1192767.jpg/w_0/c_690x518/p_1/">
-                    </a>
-                </div>
-            </div>
-            <div class="sui-Card-bottomContent">
-                <div class="re-Card-content">
-                    <div class="re-Card-priceContainer">
-                        <span class="re-Card-priceContainer--price">
-                            <span class="re-Card-priceContainer--price-down">
-                                <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#arrow-down"></use></svg>
-                            </span>
-                            <span class="re-Headline re-Bold">1.550.000 €</span>
-                        </span>
-                    </div>
-                    <div class="re-Card-meta">
-                        <ul class="re-List re-List--inline">
-                            <li>Dúplex</li>
-                            <li>3 habs.</li>
-                            <li>256 m²</li>
-                        </ul>
-                    </div>
-                    <p class="re-Card-ubication">
-                    Vallpineda - Santa Bárbara<br />
-                    Vallpineda</p>
-                    <div class="re-Card-footer">
-                        <button class="re-Card-contactButton" type="button">
-                        <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#envelop"></use></svg>
-                            <span>Contactar</span>
-                        </button>
-                        <div class="re-Card-phone">
-                        <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#phone"></use></svg>
-                        93 876 55 33</div>
-                        <div class="re-Card-favIcon">
-                        <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#fav-off"></use></svg>
-                            <!-- <span class="re-Card-favIcon--addTofavs"></span> -->
+    <div class="library__header">
+    	<div>
+    		<h1 class="library__header_title">Card</h1>
+    	</div>
+    </div>
+    <div class="library__main">
+        <div class="re-Grid-row">
+            <div class="re-Grid-col--sm-4"><!--inicio card-->
+               <div class="re-Card re-Card--highlighted">
+                <div class="sui-Card">
+                    <div class="sui-Card-topContent">
+                        <div class="re-Card-topcomponent">
+                            <span class="re-Card-bumpdate re-Small"><span class="re-label">Nuevo</span> ahora</span>
+                            <div class="re-Card-clientlogo"></div>
+                            <span class="re-Card-label re-label re-label--accent">Oportunidad</span>
+                            <a href="#">
+                                <img src="http://a.ftcs.es/inmesp/promotion/2015/03/02/19112571/1192767.jpg/w_0/c_690x518/p_1/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sui-Card-bottomContent">
+                            <div class="re-Card-content re-Card-content--highlighted">
+                                <div class="re-Card-priceContainer">
+                                    <span class="re-Card-priceContainer--price">
+                                        <span class="re-Card-priceContainer--price-down">
+                                            <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#arrow-down"></use></svg>
+                                        </span>
+                                        <span class="re-Headline">1.550.000 €</span>
+                                    </span>
+                                </div>
+                                <div class="re-Card-meta">
+                                    <ul class="re-List re-List--inline">
+                                        <li>Dúplex</li>
+                                        <li>3 habs.</li>
+                                        <li>256 m²</li>
+                                    </ul>
+                                </div>
+                                <p class="re-Card-ubication">
+                                Vallpineda - Santa Bárbara<br />
+                                Vallpineda</p>
+                                <div class="re-Card-footer re-Card-footer--highlighted">
+                                    <button class="re-Card-contactButton re-Card-contactButton--highlighted" type="button">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#envelop"></use></svg>
+                                        <span>Contactar</span>
+                                    </button>
+                                    <div class="re-Card-phone re-Card-phone--highlighted">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#phone"></use></svg>
+                                    93 876 55 33</div>
+                                    <div class="re-Card-favIcon re-Card-favIcon--highlighted">
+                                    <svg class="re-icon">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#fav"></use>
+                                    </svg>
+                                        <!-- <span class="re-Card-favIcon--addTofavs"></span> -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div><!--fin card-->
+             <div class="re-Grid-col--sm-4"><!--inicio card-->
+               <div class="re-Card">
+                <div class="sui-Card">
+                    <div class="sui-Card-topContent">
+                        <div class="re-Card-topcomponent">
+                            <span class="re-Card-bumpdate re-Small"><span class="re-label">Nuevo</span> ahora</span>
+                            <div class="re-Card-clientlogo"></div>
+                            <span class="re-Card-label re-label re-label--accent">Oportunidad</span>
+                            <a href="#">
+                                <img src="http://a.ftcs.es/inmesp/promotion/2015/03/02/19112571/1192767.jpg/w_0/c_690x518/p_1/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sui-Card-bottomContent">
+                            <div class="re-Card-content">
+                                <div class="re-Card-priceContainer">
+                                    <span class="re-Card-priceContainer--price">
+                                        <span class="re-Headline">1.550.000 €</span>
+                                    </span>
+                                </div>
+                                <div class="re-Card-meta">
+                                    <ul class="re-List re-List--inline">
+                                        <li>Dúplex</li>
+                                        <li>3 habs.</li>
+                                        <li>256 m²</li>
+                                    </ul>
+                                </div>
+                                <p class="re-Card-ubication">
+                                Vallpineda - Santa Bárbara<br />
+                                Vallpineda</p>
+                                <div class="re-Card-footer">
+                                    <button class="re-Card-contactButton" type="button">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#envelop"></use></svg>
+                                        <span>Contactar</span>
+                                    </button>
+                                    <div class="re-Card-phone">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#phone"></use></svg>
+                                    93 876 55 33</div>
+                                    <div class="re-Card-favIcon">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#fav"></use></svg>
+                                        <!-- <span class="re-Card-favIcon--addTofavs"></span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--fin card-->
+             <div class="re-Grid-col--sm-4"><!--inicio card-->
+               <div class="re-Card">
+                <div class="sui-Card">
+                    <div class="sui-Card-topContent">
+                        <div class="re-Card-topcomponent">
+                            <span class="re-Card-bumpdate re-Small"><span class="re-label">Nuevo</span> ahora</span>
+                            <div class="re-Card-clientlogo"></div>
+                            <span class="re-Card-label re-label re-label--accent">Oportunidad</span>
+                            <a href="#">
+                                <img src="http://a.ftcs.es/inmesp/promotion/2015/03/02/19112571/1192767.jpg/w_0/c_690x518/p_1/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sui-Card-bottomContent">
+                            <div class="re-Card-content">
+                                <div class="re-Card-priceContainer">
+                                    <span class="re-Card-priceContainer--price">
+                                        <span class="re-Card-priceContainer--price-down">
+                                            <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#arrow-down"></use></svg>
+                                        </span>
+                                        <span class="re-Headline">1.550.000 €</span>
+                                    </span>
+                                </div>
+                                <div class="re-Card-meta">
+                                    <ul class="re-List re-List--inline">
+                                        <li>Dúplex</li>
+                                        <li>3 habs.</li>
+                                        <li>256 m²</li>
+                                    </ul>
+                                </div>
+                                <p class="re-Card-ubication">
+                                Vallpineda - Santa Bárbara<br />
+                                Vallpineda</p>
+                                <div class="re-Card-footer">
+                                    <button class="re-Card-contactButton" type="button">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#envelop"></use></svg>
+                                        <span>Contactar</span>
+                                    </button>
+                                    <div class="re-Card-phone">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#phone"></use></svg>
+                                    93 876 55 33</div>
+                                    <div class="re-Card-favIcon">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#fav"></use></svg>
+                                        <!-- <span class="re-Card-favIcon--addTofavs"></span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--fin card-->
+             <div class="re-Grid-col--sm-4"><!--inicio card-->
+               <div class="re-Card">
+                <div class="sui-Card">
+                    <div class="sui-Card-topContent">
+                        <div class="re-Card-topcomponent">
+                            <span class="re-Card-bumpdate re-Small"><span class="re-label">Nuevo</span> ahora</span>
+                            <div class="re-Card-clientlogo"></div>
+                            <span class="re-Card-label re-label re-label--accent">Oportunidad</span>
+                            <a href="#">
+                                <img src="http://a.ftcs.es/inmesp/promotion/2015/03/02/19112571/1192767.jpg/w_0/c_690x518/p_1/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sui-Card-bottomContent">
+                            <div class="re-Card-content">
+                                <div class="re-Card-priceContainer">
+                                    <span class="re-Card-priceContainer--price">
+                                        <span class="re-Card-priceContainer--price-down">
+                                            <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#arrow-down"></use></svg>
+                                        </span>
+                                        <span class="re-Headline">1.550.000 €</span>
+                                    </span>
+                                </div>
+                                <div class="re-Card-meta">
+                                    <ul class="re-List re-List--inline">
+                                        <li>Dúplex</li>
+                                        <li>3 habs.</li>
+                                        <li>256 m²</li>
+                                    </ul>
+                                </div>
+                                <p class="re-Card-ubication">
+                                Vallpineda - Santa Bárbara<br />
+                                Vallpineda</p>
+                                <div class="re-Card-footer">
+                                    <button class="re-Card-contactButton" type="button">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#envelop"></use></svg>
+                                        <span>Contactar</span>
+                                    </button>
+                                    <div class="re-Card-phone">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#phone"></use></svg>
+                                    93 876 55 33</div>
+                                    <div class="re-Card-favIcon">
+                                    <svg class="re-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/fotocasa.sprite.svg#fav"></use></svg>
+                                        <!-- <span class="re-Card-favIcon--addTofavs"></span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--fin card-->
         </div>
     </div>
-</div>
 </div>
